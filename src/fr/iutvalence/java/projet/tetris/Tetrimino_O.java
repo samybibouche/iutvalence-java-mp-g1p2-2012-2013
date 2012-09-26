@@ -1,7 +1,5 @@
 package fr.iutvalence.java.projet.tetris;
 
-import java.awt.*;
-
 
 /**
  * @author benmessa
@@ -26,7 +24,10 @@ public class Tetrimino_O
 	 */
 	public void GenererTetrimino_O()
 	{  
-	   new GridLayout(2,2);	   
+		char[][] t={{'x','x'},{'x','y'}};
+		t[1][1]='x';
+		
+	
 	}
 
 

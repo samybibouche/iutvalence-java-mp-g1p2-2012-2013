@@ -1,9 +1,5 @@
 package fr.iutvalence.java.projet.tetris;
 
-import java.awt.GridLayout;
-
-
-
 /**
  * @author benmessa
  *  _
@@ -11,7 +7,10 @@ import java.awt.GridLayout;
  * |_|_
  * |_|_|
  * 
+ *  Chaque case doit être indépendantes
+ *  
  */
+
 public class Tetrimino_L
 {
 	
@@ -22,20 +21,17 @@ public class Tetrimino_L
 	
 	
 	/**
-	 * Creer le Tetrimino I
+	 * Creer le Tetrimino L
 	 */
-	public void GenererTetrimino_I()
+	public void GenererTetrimino_L()
 	{  
-		int[][] matrice =
-		    {
-		        { 1, 0, 4, 3 } , // tableau [0] de int
-		        { 1, 0, 9, 11, 13, 15, 17 } // tableau [1] de int
-		    };
-		
-
-		
+		char[][] t={{'x','x'},{'x','x'},{'x','x'}};
+		t[1][0]= 'y';
+		t[1][1]= 'z'; // z : point fixe du tetrimino
+		t[2][0]= 'y'; // y : vide	  
 	}
 
 
 	
 }
+
