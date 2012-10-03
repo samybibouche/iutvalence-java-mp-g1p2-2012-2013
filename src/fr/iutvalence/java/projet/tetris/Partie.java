@@ -6,7 +6,11 @@ package fr.iutvalence.java.projet.tetris;
  */
 public class Partie
 {
-
+	// FIXME attributs ? constructeurs ?
+	
+	// FIXME ne pas rappeler le nom de l'attribut/méthode dans le commentaire JavaDoc
+	// FIXME les noms d'attributs commencent par une minuscule
+	
 	/**
 	 * EtatPartie
 	 * Indique si la partie est en cours
@@ -15,7 +19,7 @@ public class Partie
 	public boolean EtatPartie;
 	
 	
-	
+	// FIXME les noms de méthodes commencent par une minuscule
 	/**
 	 * DemarrerPartie
 	 * Indique que la partie à demarrer
@@ -26,6 +30,7 @@ public class Partie
 	}
 	
 	
+	// FIXME peut-on vraiment décider de l'extérieur que la partie est terminée ?
 	/**
 	 * PartieTermine
 	 * Indique quand la partie est terminé
