@@ -25,7 +25,8 @@ public class Score
 	 */
 	public int lignes;
 	
-	// FIXME au lieu d'écrire cette méthode, il faut écrire un constructeur qui initialise les attributs 
+	// FIXME au lieu d'écrire cette méthode, 
+	//il faut écrire un constructeur qui initialise les attributs 
 	/**
 	 * @param points : Indique le nombre de points
 	 * Initialise le nombre de points à 0
@@ -35,7 +36,8 @@ public class Score
 		points=0;
 	}
 	
-	// FIXME au lieu d'écrire cette méthode, il faut écrire un constructeur qui initialise les attributs
+	// FIXME au lieu d'écrire cette méthode, 
+	//il faut écrire un constructeur qui initialise les attributs
 	/**
 	 * @param lignes : Indique le nombre de lignes
 	 * Initialise le nombre de lignes à 0
@@ -45,7 +47,8 @@ public class Score
 		lignes=0;
 	}
 	
-	// FIXME les points evoluent seuls, sans information passée depuis l'extérieur ?
+	// FIXME les points evoluent seuls, 
+	//sans information passée depuis l'extérieur ?
 	/**
 	 * Gère l'evolution des points
 	 */
@@ -54,7 +57,8 @@ public class Score
 		
 	}
 
-	// FIXME les lignes evoluent seules, sans information passée depuis l'extérieur ?
+	// FIXME les lignes evoluent seules, sans information 
+	//passée depuis l'extérieur ?
 	/**
 	 * Gère l'evolution des lignes
 	 */

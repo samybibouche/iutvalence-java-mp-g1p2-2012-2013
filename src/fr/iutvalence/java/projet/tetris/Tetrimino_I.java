@@ -12,7 +12,8 @@ package fr.iutvalence.java.projet.tetris;
  *  
  */
 
-// FIXME Remplacer les différentes classes Tetrimino_XYZ par une seule classe permettant de modéliser un tetrimino quel qu'il soit
+// FIXME Remplacer les différentes classes Tetrimino_XYZ par une seule 
+//classe permettant de modéliser un tetrimino quel qu'il soit
 
 public class Tetrimino_I
 {
@@ -28,7 +29,8 @@ public class Tetrimino_I
 	 */
 	public void GenererTetrimino_I()
 	{  
-		// FIXME Les variables locales à un constructeur ne servent à rien en dehors !
+		// FIXME Les variables locales à un constructeur ne servent à 
+		//rien en dehors !
 		char[][] t={{'x','x'},{'x','x'},{'x','x'},{'x','x'}};
 		t[0][1]= 'y';
 		t[1][0]= 'z'; // z : point fixe du tetrimino
