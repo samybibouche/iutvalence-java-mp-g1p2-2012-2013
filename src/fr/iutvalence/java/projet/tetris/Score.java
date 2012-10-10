@@ -26,45 +26,64 @@ public class Score
 	public int lignes;
 	
 	// FIXME au lieu d'écrire cette méthode, 
-	//il faut écrire un constructeur qui initialise les attributs 
+	//il faut écrire un constructeur qui initialise les attributs  (FIXED)
+	
 	/**
-	 * @param points : Indique le nombre de points
-	 * Initialise le nombre de points à 0
+	 * Constructeur 
+	 * Initialise les Scores à 0
+	 * 
 	 */
-	public void InitPoints(int points)
+	public Score()
 	{
-		points=0;
+		this.lignes=0;
+		this.points=0;
 	}
 	
-	// FIXME au lieu d'écrire cette méthode, 
-	//il faut écrire un constructeur qui initialise les attributs
-	/**
-	 * @param lignes : Indique le nombre de lignes
-	 * Initialise le nombre de lignes à 0
-	 */
-	public void InitLignes(int lignes)
-	{
-		lignes=0;
-	}
 	
 	// FIXME les points evoluent seuls, 
 	//sans information passée depuis l'extérieur ?
-	/**
-	 * Gère l'evolution des points
-	 */
-	public void EvolutionPoints() 
-	{		
-		
-	}
-
+	
 	// FIXME les lignes evoluent seules, sans information 
 	//passée depuis l'extérieur ?
+	
+	
 	/**
-	 * Gère l'evolution des lignes
+	 * Gère l'evolution du Score
 	 */
-	public void EvolutionLignes()
-	{
+	public void ajoutScore() 
+	{		
+		/* Si un certain nombre de lignes (compris entre 1 à 4) est rempli ( de 1)
+
+		 if (???) // Si une ligne est complete 
+		 {
+		 this.points=this.points+20;
+		 this.lignes=this.lignes+1;
+		 }
+		 
+		 if (???) // Si deux lignes sont completes
+		 {
+		 this.points=this.points+60;
+		 this.lignes=this.lignes+2;
+		 }
+		 
+		 if (???) // Si trois lignes sont completes 
+		 {
+		 this.points=this.points+130;
+		 this.lignes=this.lignes+3;
+		 }
+		 
+		 if (???) // Si quatre lignes sont completes
+		 {
+		 this.points=this.points+200;
+		 this.lignes=this.lignes+4; 
+		 }
+		 
+		 		 
+		 }*/
 		
 	}
 
+	
+	
+	
 }
