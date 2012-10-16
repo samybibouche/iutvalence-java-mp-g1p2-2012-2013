@@ -1,14 +1,14 @@
 package fr.iutvalence.java.projet.tetris;
 
+// FIXME compléter le commentaire
 /**
  * @author benmessa
  *
  */
 public class Forme
 {
-	// FIXME Remplacer les différentes classes Tetrimino_XYZ par une seule 
-	// classe permettant de modéliser un tetrimino quel qu'il soit (FIXED)
 	
+	// FIXME compléter le commentaire (indiquer quelles valeurs peuvent prendre les cases 
 	/**
 	 * Tableau à deux dimensions d'entiers
 	 */	
@@ -16,7 +16,7 @@ public class Forme
 	
 	
 	
-	
+	// FIXME compléter le commentaire
 	/**
 	 * @param f
 	 */
@@ -26,6 +26,7 @@ public class Forme
 	}
 	
 
+	// FIXME à nettoyer et à compléter
 	/**
 	 * Tetrimino S
 	 * 

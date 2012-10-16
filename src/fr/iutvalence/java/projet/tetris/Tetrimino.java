@@ -1,17 +1,19 @@
 package fr.iutvalence.java.projet.tetris;
 
+// FIXME compléter le commentaire
 /**
  * @author benmessa
  *
  */
 public class Tetrimino
 {
-	
+		// FIXME compléter le commentaire
 		/**
 		 * 
 		 */
 		public Forme [] formes;
 		
+		// FIXME compléter le commentaire
 		/**
 		 * 
 		 */
@@ -22,6 +24,7 @@ public class Tetrimino
 		//char [][] Forme = new char[][] {{0,'1','0','0','0'},{'0','1','0','0','0'},{'0','1','0','0','0'},{'0','1','0','0','0'}};
 	
 		
+		// FIXME compléter le commentaire
 		/**
 		 * @param formes
 		 * @param permutations

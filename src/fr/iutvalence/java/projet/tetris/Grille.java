@@ -2,13 +2,14 @@ package fr.iutvalence.java.projet.tetris;
 
 
 /**
- * @author benmessa
+ * 
  * 
  * Une Grille (Terrain de Jeu)
  * de 21x10 Carreaux
  *
  * Remarque : on utilisera 21 Carreaux de Hauteur pour provoquer un "Game Over" 
  *
+ * @author benmessa
  */
 
 public class Grille
@@ -39,6 +40,8 @@ public class Grille
 	 * |\|\|\|\|\|\|\|\|\|\|0 
 	 * 
 	 */
+	
+	// FIXME à compléter !!
 	
 	
 }

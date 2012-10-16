@@ -7,28 +7,23 @@ package fr.iutvalence.java.projet.tetris;
 public class Partie
 {
 	
+	// FIXME attributs ?
 	
-	// FIXME ne pas rappeler le nom de l'attribut/méthode dans le 
-	//commentaire JavaDoc (FIXED)
-	
-	
-	// FIXME les noms d'attributs commencent par une minuscule (FIXED)
+	// FIXME constructeurs ?
 	
 	/**
 	 * Indique si la partie est en cours
-	 * ou est terminé
+	 * ou est terminée
 	 */
 	public boolean etatPartie;
 	
 	
-	// FIXME les noms de méthodes commencent par une minuscule (FIXED)
-	
 	/**
-	 * Indique que la partie à demarrer
+	 * Indique que la partie à demarré
 	 */
 	public void demarrerPartie()
 	{
-		while (this.etatPartie == true)
+		while (this.etatPartie)
 		{
 			/*if (???) // Si un Tetrimino arrive à la 21eme ligne de la Grille (Correspond à un GAME OVER)
 			{
@@ -37,12 +32,5 @@ public class Partie
 			
 		}
 	}
-	
-	
-	// FIXME peut-on vraiment décider de l'extérieur que la partie est terminée ? 
-	// NON, on ne peut pas décider de l'extérieur (FIXED)
-	
-
-	
 	
 }

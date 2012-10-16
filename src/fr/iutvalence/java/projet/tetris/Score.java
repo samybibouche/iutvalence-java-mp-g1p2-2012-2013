@@ -2,31 +2,35 @@ package fr.iutvalence.java.projet.tetris;
 
 
 /**
- * @author benmessa
+ *
  * Calcul et indique le Score 
  * de la partie en cours
  * 
  * Le Score est composé de Points et de Lignes
  * Ligne correspond au nombre de lignes éliminés
  * 
+ *  @author benmessa
+ * 
  */
 
 public class Score
 {
 	
+	// FIXME déclarer l'attribut en private
 	/**
 	 * Indique le nombre de points
 	 */
 	public int points;
 	
-	
+
+	// FIXME déclarer l'attribut en private
 	/**
 	 * Indique le nombre de lignes
 	 */
 	public int lignes;
 	
 	// FIXME au lieu d'écrire cette méthode, 
-	//il faut écrire un constructeur qui initialise les attributs  (FIXED)
+
 	
 	/**
 	 * Constructeur 
@@ -46,7 +50,7 @@ public class Score
 	// FIXME les lignes evoluent seules, sans information 
 	//passée depuis l'extérieur ?
 	
-	
+	// FIXME (à discuter)
 	/**
 	 * Gère l'evolution du Score
 	 */
