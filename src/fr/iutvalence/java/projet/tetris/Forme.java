@@ -1,221 +1,35 @@
 package fr.iutvalence.java.projet.tetris;
 
-// FIXME compléter le commentaire
+// FIXME (FIXED) compléter le commentaire
 /**
- * @author benmessa
+ * @author benmessa 
+ * 
+ * Une classe qui permet de générer les formes de chaque Tetrimino
  *
  */
 public class Forme
 {
 	
-	// FIXME compléter le commentaire (indiquer quelles valeurs peuvent prendre les cases 
+	// FIXME (FIXED) compléter le commentaire (indiquer quelles valeurs peuvent prendre les cases) 
 	/**
-	 * Tableau à deux dimensions d'entiers
+	 * Tableau à deux dimensions d'entiers, les valeurs que peuvent prendre les cases sont 1 ou 0
+	 * 1 si la case est rempli et 0 si la case est vide 
 	 */	
-	private int [][] f;
+	public int [][] tab;
 	
-	
-	
-	// FIXME compléter le commentaire
+		
+	// FIXME (FIXED) compléter le commentaire
 	/**
-	 * @param f
+	 * @param tab : Un tableau rempli de valeurs 1 et 0 déterminant la forme
+	 * du Tetrimino
 	 */
-	public Forme(int [][] f)
+	public Forme(int [][] tab)
 	{
-		this.f=f;
+		this.tab=tab;
 	}
 	
 
-	// FIXME à nettoyer et à compléter
-	/**
-	 * Tetrimino S
-	 * 
-	 * Position 1 de la Forme S
-	 *  ___ ___ ___ ___ ___
-	 * |_0_|_0_|_X_|_0_|_0_|
-	 * |_0_|_0_|_X_|_X_|_0_|
-	 * |_0_|_0_|_0_|_X_|_0_|
-	 * |_0_|_0_|_0_|_0_|_0_|
-	 * 
-	 * Position 2 de la Forme S
-	 *  ___ ___ ___ ___ ___
-	 * |_0_|_0_|_0_|_0_|_0_|
-	 * |_0_|_0_|_0_|_X_|_X_|
-	 * |_0_|_0_|_X_|_X_|_0_|
-	 * |_0_|_0_|_0_|_0_|_0_|
-	 * 
-	 */
-	//public int[][] Forme_S = {{0,0,1,0,0,0,0,1,1,0,0,0,0,1,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0}};
-	//					      | Position 1 de la Forme_S               | Position 2 de la Forme_S  
-	
-	
-	
-	/**
-	 * Tetrimino Z
-	 * 
-	 * Position 1 de la Forme Z
-	 *  ___ ___ ___ ___ ___
-	 * |_0_|_0_|_X_|_0_|_0_|
-	 * |_0_|_X_|_X_|_0_|_0_|
-	 * |_0_|_X_|_0_|_0_|_0_|
-	 * |_0_|_0_|_0_|_0_|_0_|
-	 * 
-	 * Position 2 de la Forme Z
-	 *  ___ ___ ___ ___ ___
-	 * |_0_|_0_|_0_|_0_|_0_|
-	 * |_X_|_X_|_0_|_0_|_0_|
-	 * |_0_|_X_|_X_|_0_|_0_|
-	 * |_0_|_0_|_0_|_0_|_0_|
-	 * 
-	 */
-	//public int[][] Forme_Z = {{0,0,1,0,0,0,0,1,1,0,0,0,0,1,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0}};
-	//						 | Position 1 de la Forme_Z               | Position 2 de la Forme_Z  
-	
-	/**
-	 * Tetrimino O
-	 * 
-	 * Position 1 de la Forme O
-	 *  ___ ___ ___ ___ ___
-	 * |_0_|_0_|_X_|_X_|_0_|
-	 * |_0_|_0_|_X_|_X_|_0_|
-	 * |_0_|_0_|_0_|_0_|_0_|
-	 * |_0_|_0_|_0_|_0_|_0_|
-	 *
-	 * 
-	 */
-	//public int[][] Forme_O = {{0,0,1,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0}};
-	//						 | Position 1 de la Forme_O  
-	
-	/**
-	 * Tetrimino I
-	 * 
-	 * Position 1 de la Forme I
-	 *  ___ ___ ___ ___ ___
-	 * |_0_|_0_|_X_|_0_|_0_|
-	 * |_0_|_0_|_X_|_0_|_0_|
-	 * |_0_|_0_|_X_|_0_|_0_|
-	 * |_0_|_0_|_X_|_0_|_0_|
-	 * 
-	 * Position 2 de la Forme I
-	 *  ___ ___ ___ ___ ___
-	 * |_0_|_0_|_0_|_0_|_0_|
-	 * |_X_|_X_|_X_|_X_|_0_|
-	 * |_0_|_0_|_0_|_0_|_0_|
-	 * |_0_|_0_|_0_|_0_|_0_|
-	 *
-	 * 
-	 */
-	//public int[][] Forme_I = {{0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0},{0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0}};
-	//						 | Position 1 de la Forme_I                 | Position 2 de la Forme_I  
-	
-	/**
-	 * Tetrimino T
-	 * 
-	 * Position 1 de la Forme T
-	 *  ___ ___ ___ ___ ___
-	 * |_0_|_X_|_X_|_X_|_0_|
-	 * |_0_|_0_|_X_|_0_|_0_|
-	 * |_0_|_0_|_0_|_0_|_0_|
-	 * |_0_|_0_|_0_|_0_|_0_|
-	 * 
-	 * Position 2 de la Forme T
-	 *  ___ ___ ___ ___ ___
-	 * |_0_|_0_|_X_|_0_|_0_|
-	 * |_0_|_X_|_X_|_0_|_0_|
-	 * |_0_|_0_|_X_|_0_|_0_|
-	 * |_0_|_0_|_0_|_0_|_0_|
-	 *
-	 * Position 3 de la Forme T
-	 *  ___ ___ ___ ___ ___
-	 * |_0_|_0_|_X_|_0_|_0_|
-	 * |_0_|_X_|_X_|_X_|_0_|
-	 * |_0_|_0_|_0_|_0_|_0_|
-	 * |_0_|_0_|_0_|_0_|_0_|
-	 * 
-	 * Position 4 de la Forme T
-	 *  ___ ___ ___ ___ ___
-	 * |_0_|_0_|_X_|_0_|_0_|
-	 * |_0_|_0_|_X_|_X_|_0_|
-	 * |_0_|_0_|_X_|_0_|_0_|
-	 * |_0_|_0_|_0_|_0_|_0_|
-	 *
-	 * 
-	 */
-	//public int[][] Forme_T = {{0,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,1,0,0,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0},{0,0,1,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0},{0,0,1,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0}};
-	//						 | Position 1 de la Forme_T                 | Position 2 de la Forme_T               | Position 3 de la Forme_T                 | Position 4 de la Forme_T
-	
-	
-	/**
-	 * Tetrimino L
-	 * 
-	 * Position 1 de la Forme L
-	 *  ___ ___ ___ ___ ___
-	 * |_0_|_X_|_X_|_X_|_0_|
-	 * |_0_|_X_|_0_|_0_|_0_|
-	 * |_0_|_0_|_0_|_0_|_0_|
-	 * |_0_|_0_|_0_|_0_|_0_|
-	 * 
-	 * Position 2 de la Forme L
-	 *  ___ ___ ___ ___ ___
-	 * |_0_|_0_|_X_|_X_|_0_|
-	 * |_0_|_0_|_0_|_X_|_0_|
-	 * |_0_|_0_|_0_|_X_|_0_|
-	 * |_0_|_0_|_0_|_0_|_0_|
-	 *
-	 * Position 3 de la Forme L
-	 *  ___ ___ ___ ___ ___
-	 * |_0_|_0_|_0_|_X_|_0_|
-	 * |_0_|_X_|_X_|_X_|_0_|
-	 * |_0_|_0_|_0_|_0_|_0_|
-	 * |_0_|_0_|_0_|_0_|_0_|
-	 * 
-	 * Position 4 de la Forme L
-	 *  ___ ___ ___ ___ ___
-	 * |_0_|_0_|_X_|_0_|_0_|
-	 * |_0_|_0_|_X_|_0_|_0_|
-	 * |_0_|_0_|_X_|_X_|_0_|
-	 * |_0_|_0_|_0_|_0_|_0_|
-	 *
-	 * 
-	 */
-	//public int[][] Forme_L = {{0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,1,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0},{0,0,0,1,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0},{0,0,1,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0}};
-	//						 | Position 1 de la Forme_L                 | Position 2 de la Forme_L               | Position 3 de la Forme_L                 | Position 4 de la Forme_L
-	
-	/**
-	 * Tetrimino J
-	 * 
-	 * Position 1 de la Forme J
-	 *  ___ ___ ___ ___ ___
-	 * |_0_|_X_|_X_|_X_|_0_|
-	 * |_0_|_0_|_0_|_X_|_0_|
-	 * |_0_|_0_|_0_|_0_|_0_|
-	 * |_0_|_0_|_0_|_0_|_0_|
-	 * 
-	 * Position 2 de la Forme J
-	 *  ___ ___ ___ ___ ___
-	 * |_0_|_0_|_0_|_X_|_0_|
-	 * |_0_|_0_|_0_|_X_|_0_|
-	 * |_0_|_0_|_X_|_X_|_0_|
-	 * |_0_|_0_|_0_|_0_|_0_|
-	 *
-	 * Position 3 de la Forme J
-	 *  ___ ___ ___ ___ ___
-	 * |_0_|_X_|_0_|_0_|_0_|
-	 * |_0_|_X_|_X_|_X_|_0_|
-	 * |_0_|_0_|_0_|_0_|_0_|
-	 * |_0_|_0_|_0_|_0_|_0_|
-	 * 
-	 * Position 4 de la Forme J
-	 *  ___ ___ ___ ___ ___
-	 * |_0_|_0_|_X_|_X_|_0_|
-	 * |_0_|_0_|_X_|_0_|_0_|
-	 * |_0_|_0_|_X_|_0_|_0_|
-	 * |_0_|_0_|_X_|_0_|_0_|
-	 */
-	//public int[][] Forme_J = {{0,1,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,1,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0},{0,1,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0},{0,0,1,1,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0}};
-	//						 | Position 1 de la Forme_J                 | Position 2 de la Forme_J               | Position 3 de la Forme_J                 | Position 4 de la Forme_J
-	
-	
+	// FIXME à compléter
 	
 	
 }

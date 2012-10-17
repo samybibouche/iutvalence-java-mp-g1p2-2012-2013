@@ -16,28 +16,28 @@ package fr.iutvalence.java.projet.tetris;
 public class Score
 {
 	
-	// FIXME déclarer l'attribut en private
+	// FIXME (FIXED) déclarer l'attribut en private
 	/**
 	 * Indique le nombre de points
 	 */
-	public int points;
+	private int points;
 	
 
-	// FIXME déclarer l'attribut en private
+	// FIXME (FIXED) déclarer l'attribut en private 
 	/**
 	 * Indique le nombre de lignes
 	 */
-	public int lignes;
-	
-	// FIXME au lieu d'écrire cette méthode, 
+	private int lignes;
 
 	
 	/**
 	 * Constructeur 
 	 * Initialise les Scores à 0
+	 * @param lignes 
+	 * @param points 
 	 * 
 	 */
-	public Score()
+	public Score(int lignes, int points)
 	{
 		this.lignes=0;
 		this.points=0;
@@ -49,6 +49,7 @@ public class Score
 	
 	// FIXME les lignes evoluent seules, sans information 
 	//passée depuis l'extérieur ?
+	
 	
 	// FIXME (à discuter)
 	/**
