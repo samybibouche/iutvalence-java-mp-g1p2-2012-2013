@@ -20,18 +20,17 @@ public class Grille
 	/**
 	 * Une constante qui définit la hauteur maximum supportée par notre grille
 	 */
-	public final static int HAUTEUR_MAX = 22;
+	public final static int HAUTEUR_MAX = 21;
 
-	// FIXME définir cet attribut en private
+	// FIXME (FIXED) définir cet attribut en private
 	/**
 	 * Le tableau qui va gerer le terrain de jeu, la grille
 	 */
-	public int[][] terrain;
+	private int[][] terrain;
 
 	//@formatter:off
 	/*
-	 * 0 1 2 3 4 5 6 7 8 9
-	 * _ _ _ _ _ _ _ _ _ _ 
+	 *  _ _ _ _ _ _ _ _ _ _ 
 	 * |\|\|\|\|\|\|\|\|\|\|21 
 	 * |_|_|_|_|1|_|_|_|_|_|20 
 	 * |_|_|_|_|1|1|_|_|_|_|19
@@ -54,10 +53,17 @@ public class Grille
 	 * |1|_|_|_|1|1|1|_|_|1|2 
 	 * |1|1|_|1|1|1|1|_|1|1|1 
 	 * |\|\|\|\|\|\|\|\|\|\|0
+	 *  0 1 2 3 4 5 6 7 8 9
+	 *
 	 */
 	//@formatter:off
 
-	// FIXME cela n'a pas vraiment de sens de créer une grille déjà remplie
+	
+	
+	
+	
+	
+	// FIXME cela n'a pas vraiment de sens de créer une grille déjà remplie 
 	// FIXME compléter le commentaire
 	/**
 	 * Constructeur pour créer la Grille
@@ -71,36 +77,73 @@ public class Grille
 		this.terrain = terrain;
 	}
 
-	// FIXME compléter le commentaire (dire à quoi ressemble la chaine retournée, en montrant un exemple)
+	
+
+	// FIXME (FIXED) compléter le commentaire (dire à quoi ressemble la chaine retournée, en montrant un exemple)
 	/**
+	 * Methode pour afficher la grille de jeu
+	 * Hauteur de grille  :  22   /    Largeur  :  10
+	 * Elle retourne  22  lignes de  10  |__|  
 	 * @see java.lang.Object#toString()
 	 */
 	public String toString()
 	{
 		// TODO Auto-generated method stub
 
-		System.out.println(" __ __ __ __ __ __ __ __ __");
+		String res =" ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n";
 
 		int h; // Variable locale
 		int l; // Variable locale
 
 		h = 0;
-		while (h != 21)
+		
+		while (h != HAUTEUR_MAX)
 		{
-			l = 0;
-
-			while (l != 10)
+			l=0;
+			while (l != LARGEUR_MAX)
 			{
-				System.out.println("|__|"); // Probleme de retour chariot
-				l = l + 1;
+			res = res +"|_"+this.terrain[h][l]+"_"; 
+			l=l+1;
 			}
-			h = h + 1;
-
+			
+			res = res + "|\n";
+		
+		h = h + 1;
 		}
 
-		// FIXME surtout pas ! la chaine retournée serait simplement remplacée par celle générée par Object#toString()
+		// FIXME (FIXED) surtout pas ! la chaine retournée serait simplement remplacée par celle générée par Object#toString() 
 
-		return super.toString();
+		return res;
+	}
+	
+	
+	/**
+	 * Une methode pour déterminer l'etat d'une Ligne, c'est a dire indiqué si
+	 * la ligne donnée en paramètre est compléte ou non
+	 * 
+	 * 
+	 * @param h : la ligne a examiner
+	 * @return : un booléen vrai si la ligne est complète faux sinon
+	 */
+	public boolean getEtatLigne(int h)
+	{
+				
+			int l = 0;
+			
+			while (l != 10)
+			{
+				if (this.terrain[h][l]==0)
+				{
+				return false;
+				}
+				
+				l=l+1;				
+			}
+			
+			return true;		
+
+			
+		
 	}
 
 }

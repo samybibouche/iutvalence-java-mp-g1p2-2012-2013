@@ -17,9 +17,9 @@ public class Tetrimino
 	public Forme[] formes;
 
 	// FIXME (non résolu) détailler le commentaire
-	// FIXME si les pièces ne tournent que dans un ses, on peut se passer de ce tableau
+	// FIXME si les pièces ne tournent que dans un sens, on peut se passer de ce tableau
 	/**
-	 * Tableau qui permet de gérer les permutations
+	 * Tableau qui permet de gérer les permutations des Tetriminos qui tournent dans plus d'un sens
 	 */
 	public int[] permutations;
 

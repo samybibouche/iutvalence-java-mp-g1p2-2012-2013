@@ -10,11 +10,11 @@ package fr.iutvalence.java.projet.tetris;
 public class Partie
 {
 
-	// FIXME déclarer l'attribut en private
+	// FIXME (FIXED) déclarer l'attribut en private
 	/**
 	 * Indique si la partie est en cours ou est terminée
 	 */
-	public boolean etatPartie;
+	private boolean etatPartie;
 
 	// FIXME corriger le commentaire (à discuter)
 	/**
