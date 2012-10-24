@@ -1,16 +1,14 @@
 package fr.iutvalence.java.projet.tetris;
 
-// FIXME (FIXED) compléter le commentaire
 /**
- * @author benmessa 
- * 
  * Une classe qui permet de générer les formes de chaque Tetrimino
- *
+ * @author benmessa 
  */
 public class Forme
 {
 	
-	// FIXME (FIXED) compléter le commentaire (indiquer quelles valeurs peuvent prendre les cases) 
+	// FIXME définir les valeurs par des constantes ou utiliser le type booléen
+	// FIXME définir l'attribut en private
 	/**
 	 * Tableau à deux dimensions d'entiers, les valeurs que peuvent prendre les cases sont 1 ou 0
 	 * 1 si la case est rempli et 0 si la case est vide 
@@ -18,7 +16,7 @@ public class Forme
 	public int [][] tab;
 	
 		
-	// FIXME (FIXED) compléter le commentaire
+	// FIXME (not fixed) compléter le commentaire (indiquer dans quel état est l'objet construit)
 	/**
 	 * @param tab : Un tableau rempli de valeurs 1 et 0 déterminant la forme
 	 * du Tetrimino
@@ -28,8 +26,8 @@ public class Forme
 		this.tab=tab;
 	}
 	
-
-	// FIXME à compléter
+	
+	// FIXME redéfinir toString
 	
 	
 }

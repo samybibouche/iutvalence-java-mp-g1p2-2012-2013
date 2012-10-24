@@ -2,32 +2,29 @@ package fr.iutvalence.java.projet.tetris;
 
 // FIXME (FIXED) compléter le commentaire
 /**
- * @author benmessa
- * 
  * Une Classe permettant de gérer les Tetriminos ainsi que leurs permutations
+ * @author benmessa
  *
  */
 public class Tetrimino
 {
-		// FIXME (FIXED) compléter le commentaire
+		// FIXME corriger le commentaire
 		/**
 		 * Tableau Forme contenant les 19 formes de Tetrimino possible
 		 * 
 		 */
 		public Forme [] formes;
 		
-		// FIXME (FIXED) compléter le commentaire
+		// FIXME (non résolu) détailler le commentaire
+		// FIXME si les pièces ne tournent que dans un ses, on peut se passer de ce tableau
 		/**
 		 * Tableau qui permet de gérer les permutations
 		 */
 		public int [] permutations;
 
-
-
 		//char [][] Forme = new char[][] {{0,'1','0','0','0'},{'0','1','0','0','0'},{'0','1','0','0','0'},{'0','1','0','0','0'}};
 	
 		
-		// FIXME (FIXED) compléter le commentaire
 		/**
 		 * Construit un Tetrimino à partir du tableau Forme et du tableau permutation
 		 * 
@@ -41,8 +38,7 @@ public class Tetrimino
 		}
 		
 	
-
-	
-	
-
+		// FIXME redéfinir toString
+		
+		// FIXME ajouter des méthodes pour faire tourner le tétrimino, obtenir la forme courante
 }

@@ -1,16 +1,16 @@
 package fr.iutvalence.java.projet.tetris;
 
+
+// FIXME détailler le commentaire (bof)
 /**
- * @author benmessa
  * Indique l'etat de la partie
+ * @author benmessa
+ * 
  */
 public class Partie
 {
-	
-	// FIXME attributs ?
-	
-	// FIXME constructeurs ?
-	
+
+	// FIXME déclarer l'attribut en private
 	/**
 	 * Indique si la partie est en cours
 	 * ou est terminée
@@ -18,6 +18,7 @@ public class Partie
 	public boolean etatPartie;
 	
 	
+	// FIXME corriger le commentaire (à discuter)
 	/**
 	 * Indique que la partie à demarré
 	 */

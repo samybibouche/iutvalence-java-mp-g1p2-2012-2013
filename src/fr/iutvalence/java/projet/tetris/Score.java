@@ -15,21 +15,20 @@ package fr.iutvalence.java.projet.tetris;
 
 public class Score
 {
-	
-	// FIXME (FIXED) déclarer l'attribut en private
+	// FIXME le nombre de points est il seulement lié au nombre de lignes ou peut-on marquer des points sans faire de ligne ?
 	/**
 	 * Indique le nombre de points
 	 */
 	private int points;
 	
 
-	// FIXME (FIXED) déclarer l'attribut en private 
 	/**
 	 * Indique le nombre de lignes
 	 */
 	private int lignes;
 
 	
+	// FIXME si les paramètres du constructeur ne servent à rien, il faut les retirer
 	/**
 	 * Constructeur 
 	 * Initialise les Scores à 0
@@ -44,14 +43,10 @@ public class Score
 	}
 	
 	
-	// FIXME les points evoluent seuls, 
-	//sans information passée depuis l'extérieur ?
 	
-	// FIXME les lignes evoluent seules, sans information 
-	//passée depuis l'extérieur ?
+	// FIXME Le score est une simple structure de données, il faut des méthodes permettant de faire évoluer le score d'un certain incrément
+	// FIXME  définir des getters sur les attributs
 	
-	
-	// FIXME (à discuter)
 	/**
 	 * Gère l'evolution du Score
 	 */
@@ -88,7 +83,7 @@ public class Score
 		
 	}
 
-	
+	// FIXME redéfinir toString
 	
 	
 }

@@ -13,41 +13,27 @@ package fr.iutvalence.java.projet.tetris;
  */
 
 public class Grille
-{
-	
-	
-	/**
-	 * Entier qui correspont à la hauteur de la grille
-	 */
-	//public final int largeur;
-	
-	/**
-	 * Entier qui correspont à la hauteur de la grille
-	 */
-	//public final int hauteur;
-	
-	
+{	
 	/**
 	 * Une constante qui définit la largeur maximum
-	 * supporté par notre grille
+	 * supportée par notre grille
 	 */
 	public final static int LARGEUR_MAX=10;
 	
 	/**
 	 * Une constante qui définit la hauteur maximum
-	 * supporté par notre grille
+	 * supportée par notre grille
 	 */
 	public final static int HAUTEUR_MAX=22;
 	
 	
+	
+	// FIXME définir cet attribut en private
 	/**
 	 * Le tableau qui va gerer le terrain de jeu, la grille
 	 */
 	public int [][] terrain;
-	
-	
-	
-	
+		
 	/*  
 	 *  0 1 2 3 4 5 6 7 8 9
 	 *  _ _ _ _ _ _ _ _ _ _
@@ -76,9 +62,10 @@ public class Grille
 	 * 
 	 */
 	
-	// FIXME à compléter !!
 	
 	
+	// FIXME cela n'a pas vraiment de sens de créer une grille déjà remplie
+	// FIXME compléter le commentaire
 	/**
 	 * Constructeur pour créer la Grille
 	 * 
@@ -92,7 +79,10 @@ public class Grille
 
 
 
-
+	// FIXME compléter le commentaire (dire à quoi ressemble la chaine retournée, en montrant un exemple)
+	/**
+	 * @see java.lang.Object#toString()
+	 */
 	public String toString()
 	{
 		// TODO Auto-generated method stub
@@ -116,6 +106,8 @@ public class Grille
 			h=h+1;
 			
 		}
+		
+		// FIXME surtout pas ! la chaine retournée serait simplement remplacée par celle générée par Object#toString()
 		
 		return super.toString();
 	}
