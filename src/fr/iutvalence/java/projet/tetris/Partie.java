@@ -1,6 +1,6 @@
 package fr.iutvalence.java.projet.tetris;
 
-// FIXME détailler le commentaire (bof)
+// FIXME détailler le commentaire (bob)
 /**
  * Indique l'etat de la partie
  * 
@@ -31,5 +31,9 @@ public class Partie
 
 		}
 	}
+	
+	
+
+
 
 }

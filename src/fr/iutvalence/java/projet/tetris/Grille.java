@@ -141,9 +141,84 @@ public class Grille
 			}
 			
 			return true;		
-
 			
-		
 	}
+	
+	
+	
+	
+	/**
+	 * Une methode pour éliminer toutes les lignes pleines. Dans un premier temps,
+	 * on remplace par 0 toutes les valeurs des lignes pleines et ensuite on remplace
+	 * la valeur de la ligne courante par la ligne du dessus et ainsi de suite jusqu'a
+	 * arriver au "sommet" de la grille et de remplacer les valeurs de la plus haute ligne
+	 * par des 0.
+	 * 
+	 * 
+	 * EDIT 7/11 : Cette Methode arrive à éliminer les lignes mais lorsque nous avons des lignes
+	 * qui se suivent, elle n'arrive pas à les effacer. La correction est en cours ...
+	 */
+	public void eliminerLigne()
+	{		
+		int h=0;
+		
+		boolean full=false;
+		
+		while (h<HAUTEUR_MAX)
+		{			
+			//int sauvh=h;	// Une variable sauvh pour sauver la variable h
+			boolean plein;	
+			plein = getEtatLigne(h);
+			
+			if (plein)
+			{								
+				int l;
+				
+				// On vide la ligne.
+				for (l=0;l<LARGEUR_MAX;l++)
+				{
+					this.terrain[h][l]=0;			
+				}
+			
+			full = true;
+			plein = false;
+			}
+			
+			//h=sauvh;			
+			h=h+1;
+		}
+		
+		if (full)
+		{
+		h = 0;
+		int l=0;
+		// On remplace la ligne courante par la ligne du dessus.
+		while (h<HAUTEUR_MAX-1)
+		{
+			//for (l=0;l<LARGEUR_MAX;l++)
+			while (l<LARGEUR_MAX)	
+			{
+			this.terrain[h][l]=this.terrain[h+1][l];
+			l=l+1;
+			}
+			h=h+1;
+		}
+		
+		
+		// On remplace la derniere ligne par des 0.
+		for (l=0;l<LARGEUR_MAX;l++)
+		{
+		this.terrain[20-1][l]=1;
+		}
+		
+		}
+			
+	}
+
+
+
+	
+	
+	
 
 }
