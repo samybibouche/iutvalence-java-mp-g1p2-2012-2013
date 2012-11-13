@@ -1,6 +1,4 @@
 package fr.iutvalence.java.projet.tetris;
-
-// FIXME (FIXED) compléter le commentaire
 /**
  * Une Classe permettant de gérer les Tetriminos ainsi que leurs permutations
  * 
@@ -16,7 +14,6 @@ public class Tetrimino
 	 */
 	public Forme[] formes;
 
-	// FIXME (non résolu) détailler le commentaire
 	// FIXME si les pièces ne tournent que dans un sens, on peut se passer de ce tableau
 	/**
 	 * Tableau qui permet de gérer les permutations des Tetriminos qui tournent dans plus d'un sens

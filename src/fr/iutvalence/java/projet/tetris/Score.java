@@ -12,8 +12,6 @@ package fr.iutvalence.java.projet.tetris;
 
 public class Score
 {
-	// FIXME (FIXED) le nombre de points est il seulement lié au nombre de lignes ou peut-on marquer des points sans faire de
-	// ligne ?
 	/**
 	 * 
 	 * Les Points font parti du Score avec les Lignes
@@ -42,8 +40,6 @@ public class Score
 
 	
 	
-	// FIXME (FIXED) si les paramètres du constructeur ne servent à rien, il faut les retirer
-	
 	/**
 	 * Un Constructeur pour initialiser les Scores à 0
 	 * 
@@ -58,17 +54,12 @@ public class Score
 		this.points = 0;
 	}
 
-
-	
-	// FIXME (FIXED) définir des getters sur les attributs
-	
 	/**
 	 * Un getter pour l'attribut Points
 	 * 
 	 * @return : Un nombre de points 
 	 * 
 	 */
-
 	
 	public int getPoints ()
 	{
@@ -112,10 +103,7 @@ public class Score
 
 	}
 
-	
-	
-	// FIXME (FIXED) redéfinir toString
-	
+
 	public String toString()
 	{
 		// TODO Auto-generated method stub		

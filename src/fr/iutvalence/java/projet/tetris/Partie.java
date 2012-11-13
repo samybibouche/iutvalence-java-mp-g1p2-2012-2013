@@ -10,7 +10,6 @@ package fr.iutvalence.java.projet.tetris;
 public class Partie
 {
 
-	// FIXME (FIXED) déclarer l'attribut en private
 	/**
 	 * Indique si la partie est en cours ou est terminée
 	 */

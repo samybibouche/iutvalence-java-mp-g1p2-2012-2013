@@ -2,7 +2,6 @@ package fr.iutvalence.java.projet.tetris.tests;
 
 import fr.iutvalence.java.projet.tetris.Grille;
 
-// FIXME (FIXED) compléter le commentaire (dire ce que l'on veut tester et comment)
 /**
  * @author benmessa
  * 

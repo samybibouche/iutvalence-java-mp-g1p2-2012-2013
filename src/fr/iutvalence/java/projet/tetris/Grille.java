@@ -22,7 +22,6 @@ public class Grille
 	 */
 	public final static int HAUTEUR_MAX = 21;
 
-	// FIXME (FIXED) définir cet attribut en private
 	/**
 	 * Le tableau qui va gerer le terrain de jeu, la grille
 	 */
@@ -79,16 +78,12 @@ public class Grille
 
 	
 
-	// FIXME (FIXED) compléter le commentaire (dire à quoi ressemble la chaine retournée, en montrant un exemple)
 	/**
-	 * Methode pour afficher la grille de jeu
-	 * Hauteur de grille  :  22   /    Largeur  :  10
-	 * Elle retourne  22  lignes de  10  |__|  
+	 * Génération d'une représentation en ascii-art de la grille
 	 * @see java.lang.Object#toString()
 	 */
 	public String toString()
 	{
-		// TODO Auto-generated method stub
 
 		String res =" ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n";
 
@@ -109,9 +104,7 @@ public class Grille
 			res = res + "|\n";
 		
 		h = h + 1;
-		}
-
-		// FIXME (FIXED) surtout pas ! la chaine retournée serait simplement remplacée par celle générée par Object#toString() 
+		} 
 
 		return res;
 	}
