@@ -14,7 +14,7 @@ public class Forme
 	 * Tableau à deux dimensions d'entiers, les valeurs que peuvent prendre les cases sont 1 ou 0 1 si la case est
 	 * rempli et 0 si la case est vide
 	 */
-	public int[][] tab;
+	private int[][] tab;
 
 	// FIXME (not fixed) compléter le commentaire (indiquer dans quel état est l'objet construit)
 	/**
@@ -27,5 +27,6 @@ public class Forme
 	}
 
 	// FIXME redéfinir toString
-
-}
+	public String toString()
+	{
+	}

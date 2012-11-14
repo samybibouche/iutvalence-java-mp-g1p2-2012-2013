@@ -150,8 +150,9 @@ public class Grille
 	 * 
 	 * EDIT 7/11 : Cette Methode arrive à éliminer les lignes mais lorsque nous avons des lignes
 	 * qui se suivent, elle n'arrive pas à les effacer. La correction est en cours ...
+	 * @return : Retourne un booléen qui indique si oui ou non il faut arranger la grille 
 	 */
-	public void eliminerLigne()
+	public boolean eliminerLigne()
 	{		
 		int h=0;
 		
@@ -159,7 +160,6 @@ public class Grille
 		
 		while (h<HAUTEUR_MAX)
 		{			
-			//int sauvh=h;	// Une variable sauvh pour sauver la variable h
 			boolean plein;	
 			plein = getEtatLigne(h);
 			
@@ -176,42 +176,108 @@ public class Grille
 			full = true;
 			plein = false;
 			}
-			
-			//h=sauvh;			
+				
 			h=h+1;
 		}
 		
 		if (full)
 		{
-		h = 0;
-		int l=0;
-		// On remplace la ligne courante par la ligne du dessus.
-		while (h<HAUTEUR_MAX-1)
+			return true;	
+		}
+		else
 		{
-			//for (l=0;l<LARGEUR_MAX;l++)
-			while (l<LARGEUR_MAX)	
-			{
-			this.terrain[h][l]=this.terrain[h+1][l];
-			l=l+1;
-			}
-			h=h+1;
+			return false;
 		}
 		
-		
-		// On remplace la derniere ligne par des 0.
-		for (l=0;l<LARGEUR_MAX;l++)
-		{
-		this.terrain[20-1][l]=1;
-		}
-		
-		}
 			
 	}
-
-
-
 	
 	
-	
+	/**
+	 * Methode pour arranger la grille une fois les lignes pleines ont étaient supprimer
+	 * 
+	 * 
+	 */
+	public void arrangerGrille()
+	{
+		boolean arrange;
+		boolean solVide=true;
+		
+		arrange = eliminerLigne();
+		
+		if (arrange)
+		{
+			
+		for (int l=0;l<LARGEUR_MAX;l++)
+		{
+			if (this.terrain[20][l]!=0)
+			{
+				solVide=false;
+				break;
+			}
 
+			
+		}
+		
+		if (solVide)
+		{
+			int h = HAUTEUR_MAX-1;
+			int l=0;
+			
+			// On remplace la ligne courante par la ligne du dessus.
+			while (h>0)
+			{
+				l=0;
+				while (l<LARGEUR_MAX)	
+				{
+					
+				//if (h!=0){
+				this.terrain[h][l]=this.terrain[h-1][l];
+				l=l+1;
+				}
+				h=h-1;//}		
+				
+			}
+		}
+		else
+		{
+			int h = HAUTEUR_MAX-2;
+			int l=0;
+			
+			// On remplace la ligne courante par la ligne du dessus.
+			while (h>0)
+			{
+				l=0;
+				while (l<LARGEUR_MAX)	
+				{
+					
+				//if (h!=0){
+				this.terrain[h][l]=this.terrain[h-1][l];
+				l=l+1;
+				}
+				h=h-1;//}		
+			
+				}			
+
+		}
+		 
+		//On remplace la derniere ligne par des 0.
+		for (int l=0;l<LARGEUR_MAX;l++)
+		{
+		this.terrain[0][l]=0;
+		}
+		
+
+		}
+		
+	}
+		
+
+		
+		
 }
+
+
+	
+	
+	
