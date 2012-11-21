@@ -27,6 +27,6 @@ public class Forme
 	}
 
 	// FIXME redéfinir toString
-	public String toString()
-	{
-	}
+	//public String toString()
+	//{
+}
