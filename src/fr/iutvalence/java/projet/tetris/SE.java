@@ -5,20 +5,22 @@ import fr.iutvalence.java.projet.tetris.Tetrimino;
  * @author benmessa
  *
  */
-public class Carre extends Tetrimino
+public class SE  extends Tetrimino
 {
+
 	/**
 	 * 
 	 */
-	String[] C;
+	String[] S; 	
 	
 	/**
 	 * 
 	 */
-	public Carre()
-	{
-		super(formes);
-		this.C[0] = "Carre (seul forme)";
-	}
-
+	public SE()
+{
+	super(formes);
+	this.S[0] = "SE (1ere forme)";
+	this.S[1] = "SE (2eme forme)";
+}
+	
 }

@@ -19,6 +19,9 @@ public class Tetrimino
 
 	
 	// forme courante ?
+	/**
+	 * 
+	 */
 	private int formecourante ;
 	
 	// FIXME corriger le commentaire
@@ -26,7 +29,7 @@ public class Tetrimino
 	 * Tableau Forme contenant les 19 formes de Tetrimino possible
 	 * 
 	 */
-	private Forme[] formes;
+	public static Forme[] formes;
 
 	// char [][] Forme = new char[][]
 	// {{0,'1','0','0','0'},{'0','1','0','0','0'},{'0','1','0','0','0'},{'0','1','0','0','0'}};
@@ -49,6 +52,9 @@ public class Tetrimino
 
 	// FIXME ajouter des méthodes pour faire tourner le tétrimino, obtenir la forme courante
 	
+	/**
+	 * 
+	 */
 	public void rotation()
 	{
 		this.formecourante = (this.formecourante+1) % formes.length;
@@ -56,7 +62,7 @@ public class Tetrimino
 	
 	public String toString()
 	{
-		return this.formes[formecourante];
+		return this.formes[formecourante].toString();
 	}
 
 	/*

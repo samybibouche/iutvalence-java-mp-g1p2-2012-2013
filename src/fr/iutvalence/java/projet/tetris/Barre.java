@@ -9,6 +9,9 @@ import fr.iutvalence.java.projet.tetris.Tetrimino;
 public class Barre extends Tetrimino
 
 {
+	/**
+	 * 
+	 */
 	String[] B; 
 	
 	/**
@@ -16,7 +19,7 @@ public class Barre extends Tetrimino
 	 */
 	public Barre()
 	{
-		//super(formes);
+		super(formes);
 		this.B[0] = "Barre (1ere forme)";
 		this.B[1] = "Barre (2eme forme)";
 	}
