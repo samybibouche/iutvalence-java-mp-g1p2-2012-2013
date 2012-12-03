@@ -25,6 +25,7 @@ public class Tetrimino
 	private int formecourante ;
 	
 	// FIXME corriger le commentaire
+	// FIXME cet attribut ne doit pas être statique !
 	/**
 	 * Tableau Forme contenant les 19 formes de Tetrimino possible
 	 * 
