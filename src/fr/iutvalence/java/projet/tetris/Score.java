@@ -25,7 +25,7 @@ public class Score
 	 * 4 Ligne = 200 Points 
 	 * 
 	 */
-	private int points;
+	private static int points;
 
 	/**
 	 * 
@@ -36,7 +36,7 @@ public class Score
 	 * On peut complétés 4 lignes en meme temps au maximum
 	 * 
 	 */
-	private int lignes;
+	private static int lignes;
 
 	
 	
@@ -61,47 +61,23 @@ public class Score
 	 * 
 	 */
 	
-	public int getPoints ()
+	public static int getPoints ()
 	{
-		return this.points;
+		return points;
 	}
+	
 
 	/**
 	 * Un getter pour l'attribut Lignes
 	 * 
 	 * @return : Un nombre de lignes
 	 */
-	public int getLignes()
+	public static int getLignes()
 	{
-		return this.lignes;
+		return lignes;
 	}
 
 	
-	// FIXME Le score est une simple structure de données, il faut des méthodes permettant de faire évoluer le score
-	// d'un certain incrément
-	
-	
-	/**
-	 * Gère l'evolution du Score
-	 */
-	public void ajoutScore()
-	{
-		/*
-		 * Si un certain nombre de lignes (compris entre 1 à 4) est rempli ( de 1)
-		 *  */
-		 // if (???) // Si une ligne est complete { this.points=this.points+20; this.lignes=this.lignes+1; }
-		  
-		 // if (???) // Si deux lignes sont completes { this.points=this.points+60; this.lignes=this.lignes+2; }
-		  
-		 // if (???) // Si trois lignes sont completes { this.points=this.points+130; this.lignes=this.lignes+3; }
-		 
-		 // if (???) // Si quatre lignes sont completes { this.points=this.points+200; this.lignes=this.lignes+4; }
-		 
-		  
-		 //}
-		
-
-	}
 
 
 	public String toString()
@@ -111,5 +87,6 @@ public class Score
 	}
 
 }
+
 
 
